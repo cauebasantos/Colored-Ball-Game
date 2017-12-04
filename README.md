@@ -1,5 +1,5 @@
 # Colored Ball Game
 A game in Processing
-<p align="center">
-  <img src="C:\Users\caueb\Documents\Programação\Processing\Learning Processing\Lesson 4\LessonFourProject/coloredBall" width="350"/>
-</p>
+
+![coloredball](https://user-images.githubusercontent.com/34218434/33571050-95159978-d90d-11e7-8ad2-9327ed6f1191.png)
+
