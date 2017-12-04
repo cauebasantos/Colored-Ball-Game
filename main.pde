@@ -9,10 +9,13 @@ float scoreBar_increment = 5;
 
 void setup() {
   size(640, 480);
-
+  
+  //create the ball, the point and the score bar
   playerBall = new PlayerBall(width/2, height/2, playerBall_len);
   pointBall = new PointBall(pointBall_len);
   scoreBar = new ScoreBar(scoreBar_len);
+  
+  noCursor();
 
   smooth();
   frameRate(30);
@@ -42,9 +45,11 @@ void checkCollisionBallPoint() {
     playerBall.pos[playerBall.pos.length - 1].y, pointBall.pos.x, pointBall.pos.y);
 
   if (distance < playerBall.d / 2) { //if there is a colision
-    //create a new point
+    //paint the ball with the same color of the point
     playerBall.recolor(pointBall.c);
+    //create a new point
     pointBall.reset();
+    //increase the score bar
     scoreBar.increase(scoreBar_increment);
   }
 }
